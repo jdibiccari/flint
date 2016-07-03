@@ -23,4 +23,4 @@ def project(name, target_amount):
 		click.echo('ERROR: A project by that name already exists.')
 		return
 
-	click.echo ('Added {project} project with target of ${target}'.format(project=name, target=target_amount))
+	click.echo ('Added {project} project with target of ${target:.2f}'.format(project=name, target=target_amount))

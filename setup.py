@@ -15,6 +15,8 @@ setup(
     	'yoyo-migrations'
     ],
     include_package_data=True,
+    test_suite='nose.collector',
+    tests_require=['nose'],
     entry_points= {'console_scripts': [
             'flint=flint.cli:flint',
         ],

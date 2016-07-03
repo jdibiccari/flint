@@ -3,7 +3,7 @@ from utils.db_helpers import *
 from utils.validators import *
 
 @click.argument('amount', type=float)
-@click.argument('credit_card')
+@click.argument('credit_card', type=int)
 @click.argument('project')
 @click.argument('backer')
 @click.command()
@@ -52,7 +52,7 @@ def back(backer, project, credit_card, amount):
 			click.echo("ERROR: That backer has already backed this project!")
 			return
 
-		click.echo("{backer} backed project {project} for ${amount}".format(backer=backer, project=project, amount=amount))
+		click.echo("{backer} backed project {project} for ${amount:.2f}".format(backer=backer, project=project, amount=amount))
 	else:
 		click.echo("Something went wrong.")
 
