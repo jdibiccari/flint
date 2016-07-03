@@ -7,6 +7,7 @@ setup(
     author='Janel diBiccari',
     author_email='janel.dibiccari@gmail.com',
     description='A simple command line Kickstarter application',
+    license='MIT',
     packages=['flint'],
     install_requires=[
     	'click',
