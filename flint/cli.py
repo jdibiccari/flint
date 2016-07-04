@@ -1,6 +1,6 @@
 import click
 import os
-from flint.commands.utils.db_helpers import BaseDBHandler
+from flint.commands.utils.db_handler import BaseDBHandler
 from flint.commands import *
 
 @click.group(invoke_without_command=True)

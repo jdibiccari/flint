@@ -24,7 +24,6 @@ def validate_credit_card(credit_card):
 	if not is_luhn_compliant(credit_card):
 		raise ValidationError(credit_card, 'ERROR: This card is invalid'. format(credit_card))
 
-
 # Reference: https://en.wikipedia.org/wiki/Luhn_algorithm
 def is_luhn_compliant(credit_card):
 	digits = list(map(int, str(credit_card)))

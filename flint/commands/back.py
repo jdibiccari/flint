@@ -1,5 +1,5 @@
 import click
-from utils.db_helpers import *
+from utils.db_handler import *
 from utils.validators import *
 
 @click.argument('amount', type=float)

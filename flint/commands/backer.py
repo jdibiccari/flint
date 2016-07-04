@@ -1,5 +1,5 @@
 import click
-from utils.db_helpers import *
+from utils.db_handler import *
 
 @click.argument('name')
 @click.command()
