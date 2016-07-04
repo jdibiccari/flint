@@ -1,11 +1,12 @@
 import click
-from utils.db_handler import *
-from utils.validators import *
+import logging
+from utils import *
 
 @click.argument('target_amount', type=float)
 @click.argument('name')
 @click.command()
-def project(name, target_amount):
+@pass_dbhandler
+def project(dbhandler, name, target_amount):
 	"""
 	Add a new project \n
 	ex: project Galaxy_Guardians 800
@@ -14,13 +15,15 @@ def project(name, target_amount):
 		validate_name(name)
 		validate_amount(target_amount)
 	except ValidationError as e:
-		click.echo(e.message)
+		warn(e.message)
 		return
 
 	try:
-		BaseDBHandler.create('projects', {'name': name, 'target_amount': target_amount})
+		dbhandler.create('projects', {'name': name, 'target_amount': target_amount})
 	except sqlite3.IntegrityError:
-		click.echo('ERROR: A project by that name already exists.')
+		err_msg = get_message(PROJECT, 'project_nonunique')
+		log(__file__, err_msg)
+		warn(err_msg)
 		return
 
-	click.echo ('Added {project} project with target of ${target:.2f}'.format(project=name, target=target_amount))
+	click.echo(get_message(PROJECT, 'success', {'project': name, 'target': target_amount}))

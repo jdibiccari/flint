@@ -1,13 +1,16 @@
 import click
 from utils.db_handler import *
-from utils.validators import *
+from utils.validation import *
+from utils.notification import *
 
+# If any of the db interactions fail the others should probably be rolled back
 @click.argument('amount', type=float)
 @click.argument('credit_card', type=int)
 @click.argument('project')
 @click.argument('backer')
 @click.command()
-def back(backer, project, credit_card, amount):
+@pass_dbhandler
+def back(dbhandler, backer, project, credit_card, amount):
 	"""
 	Back a project \n
 	ex: back Mary Awesome_Sauce 5474942730093167 400
@@ -18,41 +21,44 @@ def back(backer, project, credit_card, amount):
 		validate_name(project)
 		validate_credit_card(credit_card)
 	except ValidationError as e:
-		click.echo(e.message)
+		click.secho(e.message, fg='red')
 		return
 
 	# Does project already exist?
-	art = BaseDBHandler.find_by('projects', {'name': project})
+	prj = dbhandler.find_by('projects', {'name': project})
 
-	if not art:
-		click.secho("ERROR: That project doesn't exist yet!", fg='red')
+	if not prj:
+		err_msg = get_message(BACK, 'project_not_found')
+		log(__file__, err_msg)
+		warn(err_msg)
 		return
 
-	patron = BaseDBHandler.find_or_create('backers', {'name': backer})
-	card = BaseDBHandler.find_or_create('credit_cards', {'card_number': credit_card})
+	bckr = dbhandler.find_or_create('backers', {'name': backer})
+	card = dbhandler.find_or_create('credit_cards', {'card_number': credit_card})
 
-	if patron and card:
-		project_id = art['id']
-		backer_id = patron['id']
-		card_id = card['id']
+	project_id = prj['id']
+	backer_id = bckr['id']
+	card_id = card['id']
 
-		# Try to link backer with credit card
-		try:
-			BaseDBHandler.find_or_create('backer_cards', {'credit_card_id': card_id, 'backer_id': backer_id})
-		except sqlite3.IntegrityError:
-			click.secho("ERROR: That card has already been added by another user!", fg='red')
-			return
+	# Try to link backer with credit card
+	try:
+		dbhandler.find_or_create('backer_cards', {'credit_card_id': card_id, 'backer_id': backer_id})
+	except sqlite3.IntegrityError:
+		err_msg = get_message(BACK, 'card_nonunique')
+		log(__file__, err_msg)
+		warn(err_msg)
+		return
 
-		try:
-			# Create the pledge linking backer and project
-			BaseDBHandler.create('pledges', {'backer_id': backer_id, 'project_id': project_id, 'amount': amount})
-			# Update the project's amount_raised column
-			BaseDBHandler.update_amount_raised(project_id, amount)
-		except sqlite3.IntegrityError:
-			click.secho("ERROR: That backer has already backed this project!", fg='red')
-			return
+	try:
+		# Create the pledge linking backer and project
+		dbhandler.create('pledges', {'backer_id': backer_id, 'project_id': project_id, 'amount': amount})
+		# Update the project's amount_raised column
+		dbhandler.update_amount_raised(project_id, amount)
+	except sqlite3.IntegrityError:
+		err_msg = get_message(BACK, 'backer_nonunique')
+		log(__file__, err_msg)
+		warn(err_msg)
+		return
 
-		click.echo("{backer} backed project {project} for ${amount:.2f}".format(backer=backer, project=project, amount=amount))
-	else:
-		click.echo("Something went wrong.")
+	click.echo(get_message(BACK, 'success', {'backer': backer, 'project': project, 'amount':amount}))
 

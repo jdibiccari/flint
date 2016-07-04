@@ -1,11 +1,12 @@
 import click
-from utils.db_helpers import *
+from utils.db_handler import *
 
 @click.command()
-def reset():
+@pass_dbhandler
+def reset(dbhandler):
 	"""
 	Resets your local database. Rolls back and re-applies migrations.
 	"""
-	if click.confirm('Do you want to reset your projects database?'):
-		click.secho('Resetting your project database...', fg='red')
-		reset_db()
+	if click.confirm(click.style('Do you want to reset your projects database?', fg='red')):
+		notify('Resetting your project database...')
+		dbhandler.reset_db()
