@@ -22,14 +22,14 @@ def back(backer, project, credit_card, amount):
 		return
 
 	# Does project already exist?
-	art = find_by('projects', {'name': project})
+	art = BaseDBHandler.find_by('projects', {'name': project})
 
 	if not art:
-		click.echo("ERROR: That project doesn't exist yet!")
+		click.secho("ERROR: That project doesn't exist yet!", fg='red')
 		return
 
-	patron = find_or_create('backers', {'name': backer})
-	card = find_or_create('credit_cards', {'card_number': credit_card})
+	patron = BaseDBHandler.find_or_create('backers', {'name': backer})
+	card = BaseDBHandler.find_or_create('credit_cards', {'card_number': credit_card})
 
 	if patron and card:
 		project_id = art['id']
@@ -38,18 +38,18 @@ def back(backer, project, credit_card, amount):
 
 		# Try to link backer with credit card
 		try:
-			backer_card = create('backer_cards', {'credit_card_id': card_id, 'backer_id': backer_id})
+			BaseDBHandler.find_or_create('backer_cards', {'credit_card_id': card_id, 'backer_id': backer_id})
 		except sqlite3.IntegrityError:
-			click.echo("ERROR: That card has already been added by another user!")
+			click.secho("ERROR: That card has already been added by another user!", fg='red')
 			return
 
 		try:
 			# Create the pledge linking backer and project
-			create('pledges', {'backer_id': backer_id, 'project_id': project_id, 'amount': amount})
+			BaseDBHandler.create('pledges', {'backer_id': backer_id, 'project_id': project_id, 'amount': amount})
 			# Update the project's amount_raised column
-			update_amount_raised(project_id, amount)
+			BaseDBHandler.update_amount_raised(project_id, amount)
 		except sqlite3.IntegrityError:
-			click.echo("ERROR: That backer has already backed this project!")
+			click.secho("ERROR: That backer has already backed this project!", fg='red')
 			return
 
 		click.echo("{backer} backed project {project} for ${amount:.2f}".format(backer=backer, project=project, amount=amount))

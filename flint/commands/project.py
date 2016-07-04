@@ -18,7 +18,7 @@ def project(name, target_amount):
 		return
 
 	try:
-		create('projects', {'name': name, 'target_amount': target_amount})
+		BaseDBHandler.create('projects', {'name': name, 'target_amount': target_amount})
 	except sqlite3.IntegrityError:
 		click.echo('ERROR: A project by that name already exists.')
 		return

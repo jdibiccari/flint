@@ -1,5 +1,5 @@
 import click
-from utils.db_helpers import backers_by_project
+from utils.db_helpers import *
 
 @click.argument('project')
 @click.command()
@@ -8,7 +8,7 @@ def list(project):
 	Displays backers and backed amounts \n
 	e.g. list Awesome_Sauce
 	"""
-	rows = backers_by_project(project)
+	rows = BaseDBHandler.backers_by_project(project)
 	if rows:
 		to_goal = rows[0]['target_amount'] - rows[0]['amount_raised']
 		if rows[0]['backer'] != '':

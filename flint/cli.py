@@ -1,6 +1,6 @@
 import click
 import os
-from flint.commands.utils.db_helpers import setup_db, db_exists
+from flint.commands.utils.db_helpers import BaseDBHandler
 from flint.commands import *
 
 @click.group(invoke_without_command=True)
@@ -8,9 +8,9 @@ def flint():
 	""" Flint:
 	A light-weight, cli version of Kickstarter.
 	"""
-	if not db_exists():
+	if not BaseDBHandler.db_exists():
 		click.secho('Setting up your project database...', fg='green')
-		setup_db()
+		BaseDBHandler.setup_db()
 	pass
 
 

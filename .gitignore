@@ -21,3 +21,6 @@ include
 
 # Database
 *.sqlite
+
+#Pytest
+/.cache

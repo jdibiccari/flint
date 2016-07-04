@@ -1,3 +1,4 @@
+import re
 
 class ValidationError(Exception):
 	def __init__(self, value, message):
@@ -6,6 +7,9 @@ class ValidationError(Exception):
 
 def validate_name(name):
 	if len(name) < 4 or len(name) > 20:
+		raise ValidationError(name, 'ERROR: {} is not a valid name.'. format(name))
+
+	if not re.match('^[a-zA-Z0-9_\-]+$', name):
 		raise ValidationError(name, 'ERROR: {} is not a valid name.'. format(name))
 
 def validate_amount(amount):
