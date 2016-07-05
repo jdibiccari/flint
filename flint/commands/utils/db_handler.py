@@ -2,7 +2,6 @@ import click
 import os
 import sqlite3
 from yoyo import read_migrations, get_backend
-from config_parser import parse
 
 MIGRATIONS = 'flint/db/migrations'
 DB_PATH = 'flint/db/flint.sqlite'
@@ -69,7 +68,12 @@ class DBHandler(object):
 		cols = ', '.join(filters.keys())
 		vals = ', '.join(["'{}'".format(val) for val in filters.values()])
 		insert_sql = """INSERT INTO {table} ({columns}) VALUES ({values})""".format(table=table, columns=cols, values=vals)
-		cursor.execute(insert_sql)
+		try:
+			cursor.execute(insert_sql)
+		except sqlite3.IntegrityError:
+			err_msg = get_message(PROJECT, 'project_nonunique')
+			log(__file__, err_msg)
+			raise
 		conn.commit()
 		row = self.find_by(table, {'id': cursor.lastrowid})
 		conn.close()

@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from flint import __version__
 
 setup(
@@ -9,7 +9,10 @@ setup(
     description='A simple command line Kickstarter application',
     url='https://github.com/jdibiccari/flint',
     license='MIT',
-    packages=['flint'],
+    packages=find_packages(),
+    package_data={
+        "flint.db": ["flint/db/*"]
+    },
     install_requires=[
     	'click',
     	'yoyo-migrations'

@@ -16,7 +16,7 @@ def validate_name(name):
 
 def validate_amount(amount):
 	err_msg = get_message(VALIDATION, 'invalid_amount')
-	# Backing dollar amounts should accept both dollars and cents. Taken care of by click arg type.
+	# Backing dollar amounts should accept both dollars and cents. Taken care of by click float arg type.
 	if not amount >= 0:
 		raise ValidationError(amount, err_msg)
 
