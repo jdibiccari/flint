@@ -1,1 +1,2 @@
 recursive-include flint/db *
+exclude .travis.yml

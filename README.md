@@ -4,10 +4,9 @@ Quick Start
 ------------
     $ clone this repository
     $ cd flint/
-    $ pip install --editable .
+    $ create and active a virtual environment
+    $ pip install .
     $ enter flint --help for usage options
-
-**The flint command only works properly from the repo root directory.
 
 Running Tests
 ------------
@@ -17,3 +16,5 @@ TO-DO
 ------------
 	$ write tests for db interaction
 	$ coverage
+	$ test database creation/dropping is problematic in package file system
+	$ flint-log created relative to where the package is run

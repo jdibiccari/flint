@@ -22,11 +22,9 @@ include
 # Database
 *.sqlite
 
-# Tests, coverage, travis
+# Tests, coverage
 /.cache
 .coverage
-.travis.yml
-
 
 #Logging
 *.log
