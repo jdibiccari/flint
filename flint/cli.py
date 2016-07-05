@@ -5,15 +5,16 @@ from flint.commands import *
 
 @click.group(invoke_without_command=True)
 @click.option('-t', '--test', default=False, is_flag=True)
+@click.option('-log', '--log-file', default='flint.log')
 @pass_dbhandler
-def flint(dbhandler, test):
+def flint(dbhandler, test, log_file):
 	""" Flint:
 	A light-weight, cli version of Kickstarter.
 	"""
 	# Set up a logger -- set up log rotation
 	logging.basicConfig(
 		format='%(asctime)s %(message)s',
-		filename=parse('logging', 'log_file'),
+		filename=log_file,
 		level=logging.INFO
 	)
 

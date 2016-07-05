@@ -1,307 +1,209 @@
-2016-07-04 17:31:54,316 
- /Users/janeldibiccari/Documents/code/personal/flint/flint/commands/project.py: ERROR: A project by that name already exists.
-2016-07-04 17:32:48,498 
+2016-07-04 20:49:01,521 Applying __init__
+2016-07-04 20:49:01,521 Marking __init__ applied
+2016-07-04 20:49:01,523 Applying flint_20160629_01_0FFYh
+2016-07-04 20:49:01,523  - applying step 0
+2016-07-04 20:49:01,524 Marking flint_20160629_01_0FFYh applied
+2016-07-04 20:49:01,525 Applying flint_20160629_02_oz2al
+2016-07-04 20:49:01,525  - applying step 0
+2016-07-04 20:49:01,525 Marking flint_20160629_02_oz2al applied
+2016-07-04 20:49:01,526 Applying flint_20160629_03_hGl3x
+2016-07-04 20:49:01,527  - applying step 0
+2016-07-04 20:49:01,527 Marking flint_20160629_03_hGl3x applied
+2016-07-04 20:49:01,529 Applying flint_20160701_04_bl5TA
+2016-07-04 20:49:01,529  - applying step 0
+2016-07-04 20:49:01,530 Marking flint_20160701_04_bl5TA applied
+2016-07-04 20:49:01,531 Applying flint_20160701_05_5jMsr
+2016-07-04 20:49:01,532  - applying step 0
+2016-07-04 20:49:01,533 Marking flint_20160701_05_5jMsr applied
+2016-07-04 20:49:01,547 
  project.pyc: ERROR: A project by that name already exists.
-2016-07-04 17:49:23,804 
- notification.py: ERROR: A project by that name already exists.
-2016-07-04 17:54:49,451 
- back.py: ERROR: That backer has already backed this project!
-2016-07-04 18:03:12,735 Applying __init__
-2016-07-04 18:03:12,736 Marking __init__ applied
-2016-07-04 18:03:12,738 Applying flint_20160629_01_0FFYh
-2016-07-04 18:03:12,738  - applying step 0
-2016-07-04 18:03:12,738 Marking flint_20160629_01_0FFYh applied
-2016-07-04 18:03:12,739 Applying flint_20160629_02_oz2al
-2016-07-04 18:03:12,740  - applying step 0
-2016-07-04 18:03:12,740 Marking flint_20160629_02_oz2al applied
-2016-07-04 18:03:12,741 Applying flint_20160629_03_hGl3x
-2016-07-04 18:03:12,741  - applying step 0
-2016-07-04 18:03:12,742 Marking flint_20160629_03_hGl3x applied
-2016-07-04 18:03:12,743 Applying flint_20160701_04_bl5TA
-2016-07-04 18:03:12,743  - applying step 0
-2016-07-04 18:03:12,744 Marking flint_20160701_04_bl5TA applied
-2016-07-04 18:03:12,745 Applying flint_20160701_05_5jMsr
-2016-07-04 18:03:12,745  - applying step 0
-2016-07-04 18:03:12,745 Marking flint_20160701_05_5jMsr applied
-2016-07-04 18:05:47,021 
+2016-07-04 20:49:24,775 Applying __init__
+2016-07-04 20:49:24,775 Marking __init__ applied
+2016-07-04 20:49:24,776 Applying flint_20160629_01_0FFYh
+2016-07-04 20:49:24,776  - applying step 0
+2016-07-04 20:49:24,777 Marking flint_20160629_01_0FFYh applied
+2016-07-04 20:49:24,778 Applying flint_20160629_02_oz2al
+2016-07-04 20:49:24,778  - applying step 0
+2016-07-04 20:49:24,779 Marking flint_20160629_02_oz2al applied
+2016-07-04 20:49:24,781 Applying flint_20160629_03_hGl3x
+2016-07-04 20:49:24,782  - applying step 0
+2016-07-04 20:49:24,782 Marking flint_20160629_03_hGl3x applied
+2016-07-04 20:49:24,784 Applying flint_20160701_04_bl5TA
+2016-07-04 20:49:24,784  - applying step 0
+2016-07-04 20:49:24,784 Marking flint_20160701_04_bl5TA applied
+2016-07-04 20:49:24,785 Applying flint_20160701_05_5jMsr
+2016-07-04 20:49:24,788  - applying step 0
+2016-07-04 20:49:24,790 Marking flint_20160701_05_5jMsr applied
+2016-07-04 20:49:24,799 
  project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:05:59,578 
+2016-07-04 20:51:41,224 Applying __init__
+2016-07-04 20:51:41,224 Marking __init__ applied
+2016-07-04 20:51:41,226 Applying flint_20160629_01_0FFYh
+2016-07-04 20:51:41,226  - applying step 0
+2016-07-04 20:51:41,227 Marking flint_20160629_01_0FFYh applied
+2016-07-04 20:51:41,229 Applying flint_20160629_02_oz2al
+2016-07-04 20:51:41,229  - applying step 0
+2016-07-04 20:51:41,230 Marking flint_20160629_02_oz2al applied
+2016-07-04 20:51:41,231 Applying flint_20160629_03_hGl3x
+2016-07-04 20:51:41,231  - applying step 0
+2016-07-04 20:51:41,231 Marking flint_20160629_03_hGl3x applied
+2016-07-04 20:51:41,232 Applying flint_20160701_04_bl5TA
+2016-07-04 20:51:41,232  - applying step 0
+2016-07-04 20:51:41,233 Marking flint_20160701_04_bl5TA applied
+2016-07-04 20:51:41,234 Applying flint_20160701_05_5jMsr
+2016-07-04 20:51:41,234  - applying step 0
+2016-07-04 20:51:41,235 Marking flint_20160701_05_5jMsr applied
+2016-07-04 20:51:41,241 
  project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:10:22,524 
+2016-07-04 20:51:51,534 Applying __init__
+2016-07-04 20:51:51,534 Marking __init__ applied
+2016-07-04 20:51:51,537 Applying flint_20160629_01_0FFYh
+2016-07-04 20:51:51,537  - applying step 0
+2016-07-04 20:51:51,538 Marking flint_20160629_01_0FFYh applied
+2016-07-04 20:51:51,539 Applying flint_20160629_02_oz2al
+2016-07-04 20:51:51,539  - applying step 0
+2016-07-04 20:51:51,540 Marking flint_20160629_02_oz2al applied
+2016-07-04 20:51:51,541 Applying flint_20160629_03_hGl3x
+2016-07-04 20:51:51,541  - applying step 0
+2016-07-04 20:51:51,543 Marking flint_20160629_03_hGl3x applied
+2016-07-04 20:51:51,545 Applying flint_20160701_04_bl5TA
+2016-07-04 20:51:51,545  - applying step 0
+2016-07-04 20:51:51,547 Marking flint_20160701_04_bl5TA applied
+2016-07-04 20:51:51,549 Applying flint_20160701_05_5jMsr
+2016-07-04 20:51:51,549  - applying step 0
+2016-07-04 20:51:51,552 Marking flint_20160701_05_5jMsr applied
+2016-07-04 20:51:51,558 
  project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:11:03,633 
+2016-07-04 20:52:59,777 Applying __init__
+2016-07-04 20:52:59,777 Marking __init__ applied
+2016-07-04 20:52:59,780 Applying flint_20160629_01_0FFYh
+2016-07-04 20:52:59,780  - applying step 0
+2016-07-04 20:52:59,781 Marking flint_20160629_01_0FFYh applied
+2016-07-04 20:52:59,782 Applying flint_20160629_02_oz2al
+2016-07-04 20:52:59,782  - applying step 0
+2016-07-04 20:52:59,783 Marking flint_20160629_02_oz2al applied
+2016-07-04 20:52:59,784 Applying flint_20160629_03_hGl3x
+2016-07-04 20:52:59,784  - applying step 0
+2016-07-04 20:52:59,785 Marking flint_20160629_03_hGl3x applied
+2016-07-04 20:52:59,786 Applying flint_20160701_04_bl5TA
+2016-07-04 20:52:59,787  - applying step 0
+2016-07-04 20:52:59,788 Marking flint_20160701_04_bl5TA applied
+2016-07-04 20:52:59,790 Applying flint_20160701_05_5jMsr
+2016-07-04 20:52:59,790  - applying step 0
+2016-07-04 20:52:59,791 Marking flint_20160701_05_5jMsr applied
+2016-07-04 20:52:59,797 
  project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:24:23,310 
- project.py: ERROR: A project by that name already exists.
-2016-07-04 18:24:26,587 
+2016-07-04 20:56:27,015 Applying __init__
+2016-07-04 20:56:27,015 Marking __init__ applied
+2016-07-04 20:56:27,018 Applying flint_20160629_01_0FFYh
+2016-07-04 20:56:27,018  - applying step 0
+2016-07-04 20:56:27,018 Marking flint_20160629_01_0FFYh applied
+2016-07-04 20:56:27,019 Applying flint_20160629_02_oz2al
+2016-07-04 20:56:27,020  - applying step 0
+2016-07-04 20:56:27,020 Marking flint_20160629_02_oz2al applied
+2016-07-04 20:56:27,022 Applying flint_20160629_03_hGl3x
+2016-07-04 20:56:27,022  - applying step 0
+2016-07-04 20:56:27,023 Marking flint_20160629_03_hGl3x applied
+2016-07-04 20:56:27,023 Applying flint_20160701_04_bl5TA
+2016-07-04 20:56:27,024  - applying step 0
+2016-07-04 20:56:27,024 Marking flint_20160701_04_bl5TA applied
+2016-07-04 20:56:27,025 Applying flint_20160701_05_5jMsr
+2016-07-04 20:56:27,026  - applying step 0
+2016-07-04 20:56:27,026 Marking flint_20160701_05_5jMsr applied
+2016-07-04 20:56:27,034 
  project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:24:49,951 
+2016-07-04 20:56:35,549 Applying __init__
+2016-07-04 20:56:35,549 Marking __init__ applied
+2016-07-04 20:56:35,551 Applying flint_20160629_01_0FFYh
+2016-07-04 20:56:35,551  - applying step 0
+2016-07-04 20:56:35,552 Marking flint_20160629_01_0FFYh applied
+2016-07-04 20:56:35,553 Applying flint_20160629_02_oz2al
+2016-07-04 20:56:35,553  - applying step 0
+2016-07-04 20:56:35,554 Marking flint_20160629_02_oz2al applied
+2016-07-04 20:56:35,555 Applying flint_20160629_03_hGl3x
+2016-07-04 20:56:35,555  - applying step 0
+2016-07-04 20:56:35,556 Marking flint_20160629_03_hGl3x applied
+2016-07-04 20:56:35,557 Applying flint_20160701_04_bl5TA
+2016-07-04 20:56:35,557  - applying step 0
+2016-07-04 20:56:35,558 Marking flint_20160701_04_bl5TA applied
+2016-07-04 20:56:35,559 Applying flint_20160701_05_5jMsr
+2016-07-04 20:56:35,559  - applying step 0
+2016-07-04 20:56:35,559 Marking flint_20160701_05_5jMsr applied
+2016-07-04 20:56:35,571 
  project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:30:26,324 
+2016-07-04 20:57:05,620 Applying __init__
+2016-07-04 20:57:05,621 Marking __init__ applied
+2016-07-04 20:57:05,622 Applying flint_20160629_01_0FFYh
+2016-07-04 20:57:05,623  - applying step 0
+2016-07-04 20:57:05,623 Marking flint_20160629_01_0FFYh applied
+2016-07-04 20:57:05,624 Applying flint_20160629_02_oz2al
+2016-07-04 20:57:05,625  - applying step 0
+2016-07-04 20:57:05,625 Marking flint_20160629_02_oz2al applied
+2016-07-04 20:57:05,626 Applying flint_20160629_03_hGl3x
+2016-07-04 20:57:05,628  - applying step 0
+2016-07-04 20:57:05,629 Marking flint_20160629_03_hGl3x applied
+2016-07-04 20:57:05,631 Applying flint_20160701_04_bl5TA
+2016-07-04 20:57:05,631  - applying step 0
+2016-07-04 20:57:05,631 Marking flint_20160701_04_bl5TA applied
+2016-07-04 20:57:05,632 Applying flint_20160701_05_5jMsr
+2016-07-04 20:57:05,633  - applying step 0
+2016-07-04 20:57:05,633 Marking flint_20160701_05_5jMsr applied
+2016-07-04 20:57:05,641 
  project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:30:26,412 Applying __init__
-2016-07-04 18:30:26,412 Marking __init__ applied
-2016-07-04 18:30:26,413 Applying flint_20160629_01_0FFYh
-2016-07-04 18:30:26,413  - applying step 0
-2016-07-04 18:30:26,414 Marking flint_20160629_01_0FFYh applied
-2016-07-04 18:30:26,415 Applying flint_20160629_02_oz2al
-2016-07-04 18:30:26,415  - applying step 0
-2016-07-04 18:30:26,416 Marking flint_20160629_02_oz2al applied
-2016-07-04 18:30:26,417 Applying flint_20160629_03_hGl3x
-2016-07-04 18:30:26,417  - applying step 0
-2016-07-04 18:30:26,417 Marking flint_20160629_03_hGl3x applied
-2016-07-04 18:30:26,419 Applying flint_20160701_04_bl5TA
-2016-07-04 18:30:26,419  - applying step 0
-2016-07-04 18:30:26,420 Marking flint_20160701_04_bl5TA applied
-2016-07-04 18:30:26,421 Applying flint_20160701_05_5jMsr
-2016-07-04 18:30:26,421  - applying step 0
-2016-07-04 18:30:26,421 Marking flint_20160701_05_5jMsr applied
-2016-07-04 18:30:26,435 
+2016-07-04 20:57:13,128 Applying __init__
+2016-07-04 20:57:13,128 Marking __init__ applied
+2016-07-04 20:57:13,130 Applying flint_20160629_01_0FFYh
+2016-07-04 20:57:13,130  - applying step 0
+2016-07-04 20:57:13,131 Marking flint_20160629_01_0FFYh applied
+2016-07-04 20:57:13,132 Applying flint_20160629_02_oz2al
+2016-07-04 20:57:13,132  - applying step 0
+2016-07-04 20:57:13,132 Marking flint_20160629_02_oz2al applied
+2016-07-04 20:57:13,134 Applying flint_20160629_03_hGl3x
+2016-07-04 20:57:13,134  - applying step 0
+2016-07-04 20:57:13,135 Marking flint_20160629_03_hGl3x applied
+2016-07-04 20:57:13,136 Applying flint_20160701_04_bl5TA
+2016-07-04 20:57:13,137  - applying step 0
+2016-07-04 20:57:13,138 Marking flint_20160701_04_bl5TA applied
+2016-07-04 20:57:13,139 Applying flint_20160701_05_5jMsr
+2016-07-04 20:57:13,139  - applying step 0
+2016-07-04 20:57:13,139 Marking flint_20160701_05_5jMsr applied
+2016-07-04 20:57:13,150 
  project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:46:05,893 Applying __init__
-2016-07-04 18:46:05,894 Marking __init__ applied
-2016-07-04 18:46:05,895 Applying flint_20160629_01_0FFYh
-2016-07-04 18:46:05,896  - applying step 0
-2016-07-04 18:46:05,897 Marking flint_20160629_01_0FFYh applied
-2016-07-04 18:46:05,898 Applying flint_20160629_02_oz2al
-2016-07-04 18:46:05,898  - applying step 0
-2016-07-04 18:46:05,899 Marking flint_20160629_02_oz2al applied
-2016-07-04 18:46:05,900 Applying flint_20160629_03_hGl3x
-2016-07-04 18:46:05,900  - applying step 0
-2016-07-04 18:46:05,901 Marking flint_20160629_03_hGl3x applied
-2016-07-04 18:46:05,902 Applying flint_20160701_04_bl5TA
-2016-07-04 18:46:05,902  - applying step 0
-2016-07-04 18:46:05,903 Marking flint_20160701_04_bl5TA applied
-2016-07-04 18:46:05,904 Applying flint_20160701_05_5jMsr
-2016-07-04 18:46:05,904  - applying step 0
-2016-07-04 18:46:05,905 Marking flint_20160701_05_5jMsr applied
-2016-07-04 18:46:05,916 
+2016-07-04 21:05:43,439 Applying __init__
+2016-07-04 21:05:43,439 Marking __init__ applied
+2016-07-04 21:05:43,440 Applying flint_20160629_01_0FFYh
+2016-07-04 21:05:43,441  - applying step 0
+2016-07-04 21:05:43,442 Marking flint_20160629_01_0FFYh applied
+2016-07-04 21:05:43,443 Applying flint_20160629_02_oz2al
+2016-07-04 21:05:43,443  - applying step 0
+2016-07-04 21:05:43,444 Marking flint_20160629_02_oz2al applied
+2016-07-04 21:05:43,447 Applying flint_20160629_03_hGl3x
+2016-07-04 21:05:43,447  - applying step 0
+2016-07-04 21:05:43,447 Marking flint_20160629_03_hGl3x applied
+2016-07-04 21:05:43,448 Applying flint_20160701_04_bl5TA
+2016-07-04 21:05:43,448  - applying step 0
+2016-07-04 21:05:43,449 Marking flint_20160701_04_bl5TA applied
+2016-07-04 21:05:43,450 Applying flint_20160701_05_5jMsr
+2016-07-04 21:05:43,450  - applying step 0
+2016-07-04 21:05:43,451 Marking flint_20160701_05_5jMsr applied
+2016-07-04 21:05:43,462 
  project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:46:17,139 Applying __init__
-2016-07-04 18:46:17,140 Marking __init__ applied
-2016-07-04 18:46:17,143 Applying flint_20160629_01_0FFYh
-2016-07-04 18:46:17,143  - applying step 0
-2016-07-04 18:46:17,144 Marking flint_20160629_01_0FFYh applied
-2016-07-04 18:46:17,146 Applying flint_20160629_02_oz2al
-2016-07-04 18:46:17,146  - applying step 0
-2016-07-04 18:46:17,147 Marking flint_20160629_02_oz2al applied
-2016-07-04 18:46:17,149 Applying flint_20160629_03_hGl3x
-2016-07-04 18:46:17,149  - applying step 0
-2016-07-04 18:46:17,150 Marking flint_20160629_03_hGl3x applied
-2016-07-04 18:46:17,152 Applying flint_20160701_04_bl5TA
-2016-07-04 18:46:17,152  - applying step 0
-2016-07-04 18:46:17,154 Marking flint_20160701_04_bl5TA applied
-2016-07-04 18:46:17,155 Applying flint_20160701_05_5jMsr
-2016-07-04 18:46:17,156  - applying step 0
-2016-07-04 18:46:17,157 Marking flint_20160701_05_5jMsr applied
-2016-07-04 18:46:17,168 
- project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:53:07,977 Applying __init__
-2016-07-04 18:53:07,977 Marking __init__ applied
-2016-07-04 18:53:07,979 Applying flint_20160629_01_0FFYh
-2016-07-04 18:53:07,979  - applying step 0
-2016-07-04 18:53:07,979 Marking flint_20160629_01_0FFYh applied
-2016-07-04 18:53:07,981 Applying flint_20160629_02_oz2al
-2016-07-04 18:53:07,981  - applying step 0
-2016-07-04 18:53:07,981 Marking flint_20160629_02_oz2al applied
-2016-07-04 18:53:07,983 Applying flint_20160629_03_hGl3x
-2016-07-04 18:53:07,983  - applying step 0
-2016-07-04 18:53:07,984 Marking flint_20160629_03_hGl3x applied
-2016-07-04 18:53:07,985 Applying flint_20160701_04_bl5TA
-2016-07-04 18:53:07,985  - applying step 0
-2016-07-04 18:53:07,985 Marking flint_20160701_04_bl5TA applied
-2016-07-04 18:53:07,986 Applying flint_20160701_05_5jMsr
-2016-07-04 18:53:07,987  - applying step 0
-2016-07-04 18:53:07,988 Marking flint_20160701_05_5jMsr applied
-2016-07-04 18:53:07,996 
- project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:53:22,964 Applying __init__
-2016-07-04 18:53:22,965 Marking __init__ applied
-2016-07-04 18:53:22,966 Applying flint_20160629_01_0FFYh
-2016-07-04 18:53:22,966  - applying step 0
-2016-07-04 18:53:22,967 Marking flint_20160629_01_0FFYh applied
-2016-07-04 18:53:22,969 Applying flint_20160629_02_oz2al
-2016-07-04 18:53:22,970  - applying step 0
-2016-07-04 18:53:22,970 Marking flint_20160629_02_oz2al applied
-2016-07-04 18:53:22,972 Applying flint_20160629_03_hGl3x
-2016-07-04 18:53:22,972  - applying step 0
-2016-07-04 18:53:22,973 Marking flint_20160629_03_hGl3x applied
-2016-07-04 18:53:22,974 Applying flint_20160701_04_bl5TA
-2016-07-04 18:53:22,974  - applying step 0
-2016-07-04 18:53:22,975 Marking flint_20160701_04_bl5TA applied
-2016-07-04 18:53:22,977 Applying flint_20160701_05_5jMsr
-2016-07-04 18:53:22,978  - applying step 0
-2016-07-04 18:53:22,979 Marking flint_20160701_05_5jMsr applied
-2016-07-04 18:53:22,989 
- project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:54:28,862 Applying __init__
-2016-07-04 18:54:28,862 Marking __init__ applied
-2016-07-04 18:54:28,864 Applying flint_20160629_01_0FFYh
-2016-07-04 18:54:28,865  - applying step 0
-2016-07-04 18:54:28,865 Marking flint_20160629_01_0FFYh applied
-2016-07-04 18:54:28,866 Applying flint_20160629_02_oz2al
-2016-07-04 18:54:28,867  - applying step 0
-2016-07-04 18:54:28,867 Marking flint_20160629_02_oz2al applied
-2016-07-04 18:54:28,868 Applying flint_20160629_03_hGl3x
-2016-07-04 18:54:28,868  - applying step 0
-2016-07-04 18:54:28,869 Marking flint_20160629_03_hGl3x applied
-2016-07-04 18:54:28,870 Applying flint_20160701_04_bl5TA
-2016-07-04 18:54:28,870  - applying step 0
-2016-07-04 18:54:28,871 Marking flint_20160701_04_bl5TA applied
-2016-07-04 18:54:28,872 Applying flint_20160701_05_5jMsr
-2016-07-04 18:54:28,872  - applying step 0
-2016-07-04 18:54:28,873 Marking flint_20160701_05_5jMsr applied
-2016-07-04 18:54:28,884 
- project.pyc: ERROR: A project by that name already exists.
-2016-07-04 18:54:47,063 Applying __init__
-2016-07-04 18:54:47,064 Marking __init__ applied
-2016-07-04 18:54:47,066 Applying flint_20160629_01_0FFYh
-2016-07-04 18:54:47,067  - applying step 0
-2016-07-04 18:54:47,068 Marking flint_20160629_01_0FFYh applied
-2016-07-04 18:54:47,070 Applying flint_20160629_02_oz2al
-2016-07-04 18:54:47,070  - applying step 0
-2016-07-04 18:54:47,071 Marking flint_20160629_02_oz2al applied
-2016-07-04 18:54:47,072 Applying flint_20160629_03_hGl3x
-2016-07-04 18:54:47,072  - applying step 0
-2016-07-04 18:54:47,074 Marking flint_20160629_03_hGl3x applied
-2016-07-04 18:54:47,077 Applying flint_20160701_04_bl5TA
-2016-07-04 18:54:47,077  - applying step 0
-2016-07-04 18:54:47,077 Marking flint_20160701_04_bl5TA applied
-2016-07-04 18:54:47,079 Applying flint_20160701_05_5jMsr
-2016-07-04 18:54:47,080  - applying step 0
-2016-07-04 18:54:47,081 Marking flint_20160701_05_5jMsr applied
-2016-07-04 18:54:47,095 
- project.pyc: ERROR: A project by that name already exists.
-2016-07-04 19:09:01,020 Applying __init__
-2016-07-04 19:09:01,021 Marking __init__ applied
-2016-07-04 19:09:01,022 Applying flint_20160629_01_0FFYh
-2016-07-04 19:09:01,022  - applying step 0
-2016-07-04 19:09:01,023 Marking flint_20160629_01_0FFYh applied
-2016-07-04 19:09:01,024 Applying flint_20160629_02_oz2al
-2016-07-04 19:09:01,025  - applying step 0
-2016-07-04 19:09:01,026 Marking flint_20160629_02_oz2al applied
-2016-07-04 19:09:01,028 Applying flint_20160629_03_hGl3x
-2016-07-04 19:09:01,028  - applying step 0
-2016-07-04 19:09:01,029 Marking flint_20160629_03_hGl3x applied
-2016-07-04 19:09:01,030 Applying flint_20160701_04_bl5TA
-2016-07-04 19:09:01,030  - applying step 0
-2016-07-04 19:09:01,033 Marking flint_20160701_04_bl5TA applied
-2016-07-04 19:09:01,034 Applying flint_20160701_05_5jMsr
-2016-07-04 19:09:01,034  - applying step 0
-2016-07-04 19:09:01,035 Marking flint_20160701_05_5jMsr applied
-2016-07-04 19:09:01,047 
- project.pyc: ERROR: A project by that name already exists.
-2016-07-04 19:09:11,463 Applying __init__
-2016-07-04 19:09:11,463 Marking __init__ applied
-2016-07-04 19:09:11,465 Applying flint_20160629_01_0FFYh
-2016-07-04 19:09:11,466  - applying step 0
-2016-07-04 19:09:11,466 Marking flint_20160629_01_0FFYh applied
-2016-07-04 19:09:11,468 Applying flint_20160629_02_oz2al
-2016-07-04 19:09:11,468  - applying step 0
-2016-07-04 19:09:11,469 Marking flint_20160629_02_oz2al applied
-2016-07-04 19:09:11,470 Applying flint_20160629_03_hGl3x
-2016-07-04 19:09:11,470  - applying step 0
-2016-07-04 19:09:11,471 Marking flint_20160629_03_hGl3x applied
-2016-07-04 19:09:11,472 Applying flint_20160701_04_bl5TA
-2016-07-04 19:09:11,472  - applying step 0
-2016-07-04 19:09:11,473 Marking flint_20160701_04_bl5TA applied
-2016-07-04 19:09:11,474 Applying flint_20160701_05_5jMsr
-2016-07-04 19:09:11,474  - applying step 0
-2016-07-04 19:09:11,477 Marking flint_20160701_05_5jMsr applied
-2016-07-04 19:09:11,488 
- project.pyc: ERROR: A project by that name already exists.
-2016-07-04 19:09:36,526 Applying __init__
-2016-07-04 19:09:36,526 Marking __init__ applied
-2016-07-04 19:09:36,527 Applying flint_20160629_01_0FFYh
-2016-07-04 19:09:36,528  - applying step 0
-2016-07-04 19:09:36,528 Marking flint_20160629_01_0FFYh applied
-2016-07-04 19:09:36,529 Applying flint_20160629_02_oz2al
-2016-07-04 19:09:36,530  - applying step 0
-2016-07-04 19:09:36,530 Marking flint_20160629_02_oz2al applied
-2016-07-04 19:09:36,532 Applying flint_20160629_03_hGl3x
-2016-07-04 19:09:36,533  - applying step 0
-2016-07-04 19:09:36,533 Marking flint_20160629_03_hGl3x applied
-2016-07-04 19:09:36,534 Applying flint_20160701_04_bl5TA
-2016-07-04 19:09:36,534  - applying step 0
-2016-07-04 19:09:36,535 Marking flint_20160701_04_bl5TA applied
-2016-07-04 19:09:36,536 Applying flint_20160701_05_5jMsr
-2016-07-04 19:09:36,536  - applying step 0
-2016-07-04 19:09:36,536 Marking flint_20160701_05_5jMsr applied
-2016-07-04 19:09:36,547 
- project.pyc: ERROR: A project by that name already exists.
-2016-07-04 19:09:46,211 Applying __init__
-2016-07-04 19:09:46,211 Marking __init__ applied
-2016-07-04 19:09:46,213 Applying flint_20160629_01_0FFYh
-2016-07-04 19:09:46,213  - applying step 0
-2016-07-04 19:09:46,213 Marking flint_20160629_01_0FFYh applied
-2016-07-04 19:09:46,215 Applying flint_20160629_02_oz2al
-2016-07-04 19:09:46,215  - applying step 0
-2016-07-04 19:09:46,215 Marking flint_20160629_02_oz2al applied
-2016-07-04 19:09:46,217 Applying flint_20160629_03_hGl3x
-2016-07-04 19:09:46,217  - applying step 0
-2016-07-04 19:09:46,217 Marking flint_20160629_03_hGl3x applied
-2016-07-04 19:09:46,219 Applying flint_20160701_04_bl5TA
-2016-07-04 19:09:46,219  - applying step 0
-2016-07-04 19:09:46,220 Marking flint_20160701_04_bl5TA applied
-2016-07-04 19:09:46,221 Applying flint_20160701_05_5jMsr
-2016-07-04 19:09:46,222  - applying step 0
-2016-07-04 19:09:46,225 Marking flint_20160701_05_5jMsr applied
-2016-07-04 19:09:46,234 
- project.pyc: ERROR: A project by that name already exists.
-2016-07-04 19:11:12,278 Applying __init__
-2016-07-04 19:11:12,278 Marking __init__ applied
-2016-07-04 19:11:12,281 Applying flint_20160629_01_0FFYh
-2016-07-04 19:11:12,281  - applying step 0
-2016-07-04 19:11:12,282 Marking flint_20160629_01_0FFYh applied
-2016-07-04 19:11:12,283 Applying flint_20160629_02_oz2al
-2016-07-04 19:11:12,283  - applying step 0
-2016-07-04 19:11:12,283 Marking flint_20160629_02_oz2al applied
-2016-07-04 19:11:12,284 Applying flint_20160629_03_hGl3x
-2016-07-04 19:11:12,285  - applying step 0
-2016-07-04 19:11:12,286 Marking flint_20160629_03_hGl3x applied
-2016-07-04 19:11:12,288 Applying flint_20160701_04_bl5TA
-2016-07-04 19:11:12,288  - applying step 0
-2016-07-04 19:11:12,292 Marking flint_20160701_04_bl5TA applied
-2016-07-04 19:11:12,294 Applying flint_20160701_05_5jMsr
-2016-07-04 19:11:12,295  - applying step 0
-2016-07-04 19:11:12,296 Marking flint_20160701_05_5jMsr applied
-2016-07-04 19:11:12,306 
- project.pyc: ERROR: A project by that name already exists.
-2016-07-04 19:14:57,084 Applying __init__
-2016-07-04 19:14:57,084 Marking __init__ applied
-2016-07-04 19:14:57,086 Applying flint_20160629_01_0FFYh
-2016-07-04 19:14:57,086  - applying step 0
-2016-07-04 19:14:57,087 Marking flint_20160629_01_0FFYh applied
-2016-07-04 19:14:57,089 Applying flint_20160629_02_oz2al
-2016-07-04 19:14:57,089  - applying step 0
-2016-07-04 19:14:57,089 Marking flint_20160629_02_oz2al applied
-2016-07-04 19:14:57,090 Applying flint_20160629_03_hGl3x
-2016-07-04 19:14:57,091  - applying step 0
-2016-07-04 19:14:57,092 Marking flint_20160629_03_hGl3x applied
-2016-07-04 19:14:57,094 Applying flint_20160701_04_bl5TA
-2016-07-04 19:14:57,094  - applying step 0
-2016-07-04 19:14:57,094 Marking flint_20160701_04_bl5TA applied
-2016-07-04 19:14:57,095 Applying flint_20160701_05_5jMsr
-2016-07-04 19:14:57,096  - applying step 0
-2016-07-04 19:14:57,098 Marking flint_20160701_05_5jMsr applied
-2016-07-04 19:14:57,109 
- project.pyc: ERROR: A project by that name already exists.
-2016-07-04 19:15:04,517 Applying __init__
-2016-07-04 19:15:04,518 Marking __init__ applied
-2016-07-04 19:15:04,519 Applying flint_20160629_01_0FFYh
-2016-07-04 19:15:04,520  - applying step 0
-2016-07-04 19:15:04,521 Marking flint_20160629_01_0FFYh applied
-2016-07-04 19:15:04,522 Applying flint_20160629_02_oz2al
-2016-07-04 19:15:04,522  - applying step 0
-2016-07-04 19:15:04,523 Marking flint_20160629_02_oz2al applied
-2016-07-04 19:15:04,524 Applying flint_20160629_03_hGl3x
-2016-07-04 19:15:04,524  - applying step 0
-2016-07-04 19:15:04,525 Marking flint_20160629_03_hGl3x applied
-2016-07-04 19:15:04,526 Applying flint_20160701_04_bl5TA
-2016-07-04 19:15:04,527  - applying step 0
-2016-07-04 19:15:04,527 Marking flint_20160701_04_bl5TA applied
-2016-07-04 19:15:04,529 Applying flint_20160701_05_5jMsr
-2016-07-04 19:15:04,529  - applying step 0
-2016-07-04 19:15:04,532 Marking flint_20160701_05_5jMsr applied
-2016-07-04 19:15:04,541 
+2016-07-04 21:06:17,108 Applying __init__
+2016-07-04 21:06:17,108 Marking __init__ applied
+2016-07-04 21:06:17,109 Applying flint_20160629_01_0FFYh
+2016-07-04 21:06:17,109  - applying step 0
+2016-07-04 21:06:17,110 Marking flint_20160629_01_0FFYh applied
+2016-07-04 21:06:17,112 Applying flint_20160629_02_oz2al
+2016-07-04 21:06:17,112  - applying step 0
+2016-07-04 21:06:17,113 Marking flint_20160629_02_oz2al applied
+2016-07-04 21:06:17,115 Applying flint_20160629_03_hGl3x
+2016-07-04 21:06:17,115  - applying step 0
+2016-07-04 21:06:17,115 Marking flint_20160629_03_hGl3x applied
+2016-07-04 21:06:17,116 Applying flint_20160701_04_bl5TA
+2016-07-04 21:06:17,117  - applying step 0
+2016-07-04 21:06:17,117 Marking flint_20160701_04_bl5TA applied
+2016-07-04 21:06:17,118 Applying flint_20160701_05_5jMsr
+2016-07-04 21:06:17,119  - applying step 0
+2016-07-04 21:06:17,119 Marking flint_20160701_05_5jMsr applied
+2016-07-04 21:06:17,126 
  project.pyc: ERROR: A project by that name already exists.

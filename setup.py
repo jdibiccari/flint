@@ -15,8 +15,10 @@ setup(
     	'yoyo-migrations'
     ],
     include_package_data=True,
-    setup_requires=['pytest-runner'],
-    tests_require=['pytest'],
+    extras_require = {
+        'test': ['coverage', 'pytest', 'pytest-cov'],
+    },
+    setup_requires=['pytest-runner', 'pytest'],
     entry_points= {'console_scripts': [
             'flint=flint.cli:flint',
         ],

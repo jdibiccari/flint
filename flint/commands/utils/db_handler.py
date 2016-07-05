@@ -4,17 +4,24 @@ import sqlite3
 from yoyo import read_migrations, get_backend
 from config_parser import parse
 
+MIGRATIONS = 'flint/db/migrations'
+DB_PATH = 'flint/db/flint.sqlite'
+DB = 'sqlite:///{}'.format(DB_PATH)
+
+TEST_DB_PATH = 'flint/db/test-flint.sqlite'
+TEST_DB = 'sqlite:///{}'.format(TEST_DB_PATH)
+
 class DBHandler(object):
 	def __init__(self, test=False):
-		self.migration_directory = parse('database', 'migrations')
-		self.db_path = parse('database', 'db_path')
-		self.db = parse('database', 'db')
+		self.migration_directory = MIGRATIONS
+		self.db_path = DB_PATH
+		self.db = DB
 		if test:
 			self.test_mode()
 
 	def test_mode(self):
-		self.db_path = parse('database', 'test_db_path')
-		self.db = parse('database', 'test_db')
+		self.db_path = TEST_DB_PATH
+		self.db = TEST_DB
 
 	def db_exists(self):
 		return os.path.isfile(self.db_path)
@@ -37,7 +44,7 @@ class DBHandler(object):
 		os.remove(self.db_path)
 
 	def connect_to_db(self):
-		# Returns a db connection and a cursor for executing queries
+		# Returns a sqlite db connection and a cursor for executing queries
 		conn = False
 		cursor = False
 		try:

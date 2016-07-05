@@ -22,5 +22,9 @@ include
 # Database
 *.sqlite
 
-#Pytest
+#Tests and coverage
 /.cache
+.coverage
+
+#Logging
+*.log
