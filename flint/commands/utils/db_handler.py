@@ -5,22 +5,19 @@ from yoyo import read_migrations, get_backend
 
 MIGRATIONS = 'flint/db/migrations'
 DB_PATH = 'flint/db/flint.sqlite'
-DB = 'sqlite:///{}'.format(DB_PATH)
-
 TEST_DB_PATH = 'flint/db/test-flint.sqlite'
-TEST_DB = 'sqlite:///{}'.format(TEST_DB_PATH)
 
 class DBHandler(object):
 	def __init__(self, test=False):
 		self.migration_directory = MIGRATIONS
 		self.db_path = DB_PATH
-		self.db = DB
+		self.db = 'sqlite:///{}'.format(self.db_path)
 		if test:
 			self.test_mode()
 
 	def test_mode(self):
 		self.db_path = TEST_DB_PATH
-		self.db = TEST_DB
+		self.db = 'sqlite:///{}'.format(self.db_path)
 
 	def db_exists(self):
 		return os.path.isfile(self.db_path)
@@ -44,14 +41,12 @@ class DBHandler(object):
 
 	def connect_to_db(self):
 		# Returns a sqlite db connection and a cursor for executing queries
-		conn = False
-		cursor = False
 		try:
 		    conn=sqlite3.connect(self.db_path)
 		    conn.row_factory = sqlite3.Row
 		    cursor = conn.cursor()
 		except:
-			pass
+			raise
 		return conn, cursor
 
 	def find_by(self, table, filters):

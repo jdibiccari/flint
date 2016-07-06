@@ -1,5 +1,5 @@
 import click
-from utils.db_handler import *
+from utils import *
 
 @click.command()
 @pass_dbhandler

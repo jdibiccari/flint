@@ -34,11 +34,6 @@ def warn(msg):
 def notify(msg):
 	return click.secho(msg, fg='green')
 
-def log(file, msg):
-	import logging
-	file = os.path.basename(file)
-	logging.error('\n {}: {}'.format(file, msg))
-
 def get_message(cmd_msgs, outcome, replace_with={}):
 	if replace_with:
 		return cmd_msgs[outcome].format(**replace_with)

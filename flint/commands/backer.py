@@ -1,6 +1,5 @@
 import click
-from utils.db_handler import *
-from utils.notification import *
+from utils import *
 
 @click.argument('name')
 @click.command()

@@ -1,5 +1,4 @@
 import click
-import logging
 from utils import *
 
 @click.argument('target_amount', type=float)

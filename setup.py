@@ -16,12 +16,10 @@ setup(
     ],
     include_package_data=True,
     extras_require = {
-        'test': ['coverage', 'pytest', 'pytest-cov'],
+        'test': ['coverage', 'pytest-cov', 'pytest'],
     },
-    setup_requires=['pytest-runner', 'pytest'],
     entry_points= {'console_scripts': [
             'flint=flint.cli:flint',
         ],
     },
 )
-

@@ -1,7 +1,5 @@
 import click
-from utils.db_handler import *
-from utils.validation import *
-from utils.notification import *
+from utils import *
 
 # If any of the db interactions fail the others should probably be rolled back
 @click.argument('amount', type=float)
