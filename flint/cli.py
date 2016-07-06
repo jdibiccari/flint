@@ -11,12 +11,6 @@ def flint(dbhandler, test, log_file):
 	""" Flint:
 	A light-weight, cli version of Kickstarter.
 	"""
-	# Set up a logger -- set up log rotation
-	logging.basicConfig(
-		format='%(asctime)s %(message)s',
-		filename=log_file,
-		level=logging.INFO
-	)
 
 	if test:
 		dbhandler.test_mode()
