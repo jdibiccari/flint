@@ -3,6 +3,6 @@ python:
   - "2.7"
 # command to install dependencies
 install:
-  - pip install --editable .
+  - pip install --editable .[test]
 # command to run tests
-script: python setup.py test
+script: py.test
