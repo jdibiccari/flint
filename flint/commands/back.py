@@ -29,7 +29,6 @@ def back(dbhandler, backer, project, credit_card, amount):
 
 	if not prj:
 		err_msg = get_message(BACK, 'project_not_found')
-		log(__file__, err_msg)
 		warn(err_msg)
 		return
 
@@ -45,7 +44,6 @@ def back(dbhandler, backer, project, credit_card, amount):
 		dbhandler.find_or_create('backer_cards', {'credit_card_id': card_id, 'backer_id': backer_id})
 	except sqlite3.IntegrityError:
 		err_msg = get_message(BACK, 'card_nonunique')
-		log(__file__, err_msg)
 		warn(err_msg)
 		return
 
@@ -56,7 +54,6 @@ def back(dbhandler, backer, project, credit_card, amount):
 		dbhandler.update_amount_raised(project_id, amount)
 	except sqlite3.IntegrityError:
 		err_msg = get_message(BACK, 'backer_nonunique')
-		log(__file__, err_msg)
 		warn(err_msg)
 		return
 
