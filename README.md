@@ -17,25 +17,26 @@ Running Tests
 
 To-Do
 ------------
-	* logging
-	* packaging for distribution (package database files)
-	* better test organization
+- [ ] logging
+- [ ] packaging for distribution (package database files)
+- [ ] better test organization
 
 
 Design Decisions
-------------
-Language choice: Python
+------------------
+1. Language choice: Python
 	* I work with python every day in a web app context but have never built a command line tool with it
-Command line tool package: Click
+2. Command line tool package: Click
 	* Argument and option parsing
 	* Defaults and arg type enforcement
 	* Generates help text
 	* Nest commands and pass context
 	* Some testing support
-Database vs in-memory storage:
+3. Database vs in-memory storage:
 	* Sqlite --> file-based db, standard lib module for db interaction
 	* Take advantage of database col types and unique constraints to prevent some errors, validate
-Retrospective:
+4. Retrospective:
 	* Click documentation was a little lacking/disjointed for complex examples
 	* If I were to make it again I think it would be fun to use python standard lib modules for as much as possible
-		* Replacing Click with cmd and argparse? Create an interactive shell/repl vs a command line tool a la git?
+	* Replacing Click with cmd and argparse? Create an interactive shell/repl vs a command line tool a la git?
+	* Spent too much time thinking about packaging aspect at start instead of prototyping and testing
