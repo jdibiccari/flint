@@ -2,7 +2,6 @@ import click
 import os
 import sqlite3
 from yoyo import read_migrations, get_backend
-from config_parser import parse
 
 MIGRATIONS = 'flint/db/migrations'
 DB_PATH = 'flint/db/flint.sqlite'
