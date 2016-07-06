@@ -22,7 +22,6 @@ def project(dbhandler, name, target_amount):
 		dbhandler.create('projects', {'name': name, 'target_amount': target_amount})
 	except sqlite3.IntegrityError:
 		err_msg = get_message(PROJECT, 'project_nonunique')
-		log(__file__, err_msg)
 		warn(err_msg)
 		return
 
