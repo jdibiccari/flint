@@ -4,10 +4,9 @@ from flint.commands.utils import *
 from flint.commands import *
 
 @click.group(invoke_without_command=True)
-@click.option('-t', '--test', default=False, is_flag=True)
-@click.option('-log', '--log-file', default='flint.log')
+@click.option('-t', '--test', default=False, is_flag=True, help='Run in test mode')
 @pass_dbhandler
-def flint(dbhandler, test, log_file):
+def flint(dbhandler, test):
 	""" Flint:
 	A light-weight, cli version of Kickstarter.
 	"""

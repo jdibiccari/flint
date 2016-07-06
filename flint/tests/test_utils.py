@@ -34,7 +34,28 @@ class TestValidation(unittest.TestCase):
             self.fail("validate_name raised ValidationErro unexpectedly!")
 
     def test_validate_amount(self):
-        pass
+        """It throws a validation error if amount is less than 0"""
+        with self.assertRaises(ValidationError):
+            validate_amount(-500)
 
-    def test_validate_credit_card(self):
-        pass
+    def test_validate_credit_card_luhn_10_fail(self):
+        """It throws a validation error if credit card fails luhn-10"""
+        with self.assertRaises(ValidationError):
+            validate_credit_card(1234567890123456)
+
+    def test_validate_credit_card_luhn_10_success(self):
+        """It doesn't raise error if card passes luhn-10"""
+        try:
+            validate_credit_card(5474942730093167)
+        except ExceptionType:
+            self.fail("validate_credit_card raised ValidationErro unexpectedly!")
+
+    def test_is_luhn_compliant_success(self):
+        """It returns true if card is luhn-10 compliant"""
+        result = is_luhn_compliant(5227726754630966)
+        self.assertTrue(result)
+
+    def test_is_luhn_compliant_success(self):
+        """It returns false if card is not luhn-10 compliant"""
+        result = is_luhn_compliant(5227726754630963)
+        self.assertFalse(result)

@@ -14,7 +14,7 @@ Running Tests
 	$ python setup.py test
 
 
-TO-DO
+To-Do
 ------------
-	$ write tests for db interaction
+	$ logging
 	$ coverage
