@@ -1,4 +1,4 @@
-#Flint
+#Flint [![Build Status](https://travis-ci.org/jdibiccari/flint.svg?branch=master)](https://travis-ci.org/jdibiccari/flint)
 
 Quick Start
 ------------
